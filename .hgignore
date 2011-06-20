@@ -1,0 +1,44 @@
+# Ignores the specified file/directory regexp/glob patterns
+# from being tracked in a mercurial repository.
+#
+# An untracked file is ignored if its path relative to the repository root directory,
+# or any prefix path of that path, is matched.
+# Files are only ignored when being added or updated.
+# Untrack already tracked files with `hg rm -Af filename`.
+# Force adding or updating ignored file with `hg add -f filename`.
+#
+# Blank lines or lines starting with # are ignored.
+# You can use 'syntax: regexp' to match following patterns as python/perl regexps (default).
+# You can use 'syntax: glob' to match following patterns as shell globs.
+# You can end patterns with a forward slash (/) to match a directory explicitly.
+#
+# See http://www.selenic.com/mercurial/hgignore.5.html
+# See http://www.google.com/search?num=100&hl=en&q=hgignore
+# See http://hgignore.com/
+
+syntax: glob
+
+# Git repository info:
+.git/
+
+# Backup files:
+*~
+
+# Python compiled modules:
+*.py[oc]
+
+# Log files:
+*.log
+pip-log.txt
+
+# Distribute/setuptools bootstrap:
+distribute_setup.*
+ez_setup.*
+
+# Build and dist directories:
+=build/
+build/
+dist/
+dist.zip
+*.egg-info
+*.7z
