@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-MonkeyPatch
+monkeypatch
 ===========
 
 Patches module object/class/function.
@@ -13,13 +13,13 @@ Issues:
   https://github.com/iki/monkeypatch/issues
 Updates:
   https://github.com/iki/monkeypatch/commits/master.atom
-Sources via git:
+Sources via `git <http://git-scm.com/>`_:
   ``git clone https://github.com/iki/monkeypatch``
-Sources via hg-git:
+Sources via `hg-git <https://github.com/schacon/hg-git>`_:
   ``hg clone git://github.com/iki/monkeypatch``
 """
 __docformat__ = 'restructuredtext en'
-__version__ = '0.1rc2'
+__version__ = '0.1rc3'
 __all__ = [ 'patch' ]
 
 import sys
